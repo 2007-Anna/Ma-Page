@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Lien avec icone </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <style>
+            .icon-link {
+                display: inline-flex;
+                align-items: center;
+                font-size: 18px;
+                color: #1d4ed8; 
+                text-decoration: none;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+            .icon-link i {
+                margin-right: 8px;
+                transition: transform 0.3s ease;
+            }
+            .icon-link:hover {
+                color: #2563eb;
+            }
+            .icon-link:hover i {
+                transform: rotate(15deg) scale(1.2);
+            }
+        </style>
+    </head>
+    <body style="font-family: Arial,sans-serif; padding: 2rem;">
+        <a href="formulaire.html" target="_blank" class="icon-link">
+            <i class="fas fa-home"></i> Aller sur le site
+        </a>
+        
+    </body>
+</html>

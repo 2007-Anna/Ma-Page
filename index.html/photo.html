@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Galerie de photos</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f3f4f6;
+                padding: 2rem;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            .card {
+                background-color: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            }
+            .card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Galerie de photos</h1>
+        <div class="gallery">
+            <div class="card">
+                <img src="asap-pang-Us2KDzmnUCo-unsplash (1).jpg" alt="photo 1">
+            </div>
+            <div class="card">
+                <img src="colin-watts-VdIlByTCH-0-unsplash.jpg" alt="photo 2">
+            </div>
+            <div class="card">
+                <img src="david-martin-aWX5w5ZfT3A-unsplash.jpg" alt="photo 3">
+            </div>
+            <div class="card">
+                <img src="ellen-tanner-BaM_1KlFZkc-unsplash.jpg" alt="photo 4">
+            </div>
+            <div class="card">
+                <img src="lewis-purcell-HQKT3TpVAVQ-unsplash.jpg" alt="photo 5">
+            </div>
+            <div class="card">
+                <img src="maria-teneva-HQnYH_zBcOg-unsplash.jpg" alt="photo 6">
+            </div>
+            <div class="card">
+                <img src="ricardo-gomez-angel-AvN9NLUblUg-unsplash.jpg" alt="photo 7">
+            </div>
+            <div class="card">
+                <img src="wai-siew-LjesOs00QRg-unsplash.jpg" alt="photo 8">
+            </div>
+        </div>
+    </body>
+</html>
