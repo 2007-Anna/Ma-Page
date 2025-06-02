@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire stylisé</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            .form-container {
+                background-color: #fff;
+                padding: 25px;
+                border-radius: 10px;
+                max-width: 600px;
+                margin: auto;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+            h2 {
+                text-align: center;
+                color: #333;
+            }
+            label {
+                display: block;
+                margin-top: 15px;
+                font-weight: bold;
+                color: #555;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            select,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type="radio"],
+            input[type="checkbox"] {
+                margin-right: 5px;
+            }
+            .inline {
+                display: inline-block;
+                margin-right: 15px;
+            }
+            .buttons {
+                margin-top: 20px;
+                text-align: center;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                margin: 5px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input[type="reset"] {
+                background-color: #f44336;
+            }
+            input[type="submit"]:hover,
+            input[type="reset"]:hover {
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>FORMULAIRE D'INSCRIPTION</h2>
+            <form action="traitement.php" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
+                <label for="motdepasse">Mot de passe :</label>
+                <input type="password" id="motdepasse" name="motdepasse" required>
+                <label >Sexe :</label>
+                <div class="inline"><input type="radio" id="homme" name="sexe" value="Homme" required><label for="homme">Homme</label></div>
+                <div class="inline"><input type="radio" id="femme" name="sexe" value="Femme"><label for="femme">Femme</label></div>
+                <label for="pays">Pays d'origine :</label>
+                <select name="pays" id="pays" required>
+                    <option value="">--Choisir un pays--</option>
+                    <option value="France">France</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Maroc">Maroc</option>
+                    <option value="Cameroun">Cameroun</option>
+                    <option value="Sénégal">Sénégal</option>
+                </select>
+                <label >Loisirs :</label>
+                <div><input type="checkbox" name="Loisirs[]" value="Lecture">Lecture</div>
+                <div><input type="checkbox" name="Loisirs[]" value="Sport">Sport</div>
+                <div><input type="checkbox" name="Loisirs[]" value="Musique">Musique</div>
+                <div><input type="checkbox" name="Loisirs[]" value="Voyage">Voyage</div>
+                <div><input type="checkbox" name="Loisirs[]" value="Cuisuine">Cuisuine</div>
+                <label >Fruits préférés :</label>
+                <div><input type="checkbox" name="Fruits" value="Pomme">Pomme</div>
+                <div><input type="checkbox" name="Fruits" value="Banane">Banane</div>
+                <div><input type="checkbox" name="Fruits" value="Orange">Orange</div>
+                <div><input type="checkbox" name="Fruits" value="Mangue">Mangue</div>
+                <div><input type="checkbox" name="Fruits" value="Fraise">Fraise</div>
+                <div class="buttons">
+                    <input type="submit" value="Valider">
+                    <input type="reset" value="Réinitialiser">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

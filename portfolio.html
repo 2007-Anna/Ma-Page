@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Guemne Elvira -  porfolio</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                font-family: 'Segoe UI' , sans-serif;
+                background-color: #0d1b2a;
+                color: white;
+            }
+            /* Section d'introduction */
+            .intro {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                animation: fadeIn 1.5s ease-out;
+            }
+            .intro h1 {
+                font-size: 3rem;
+                margin-bottom: 0.5rem;
+            }
+            .intro h2 {
+                font-size: 1.8rem;
+                color: #f43f5e;
+                font-family: 'Brush Script MT' , cursive;
+                margin-bottom: 2rem;
+            }
+            .intro a {
+                background-color: #f43f5e;
+                color: white;
+                padding: 0.8rem 2rem;
+                border: none;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: background 0.3s;
+            }
+            .intro a:hover {
+                background-color: #e11d48;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(30px);}
+                to { opacity: 1; transform: translateY(0);}
+            }
+            /* Section de projets */
+            .projects {
+                padding: 4rem 2rem;
+                max-width: 900px;
+                margin: auto;
+            }
+            .card {
+                background-color: #1e293b;
+                border-radius: 15px;
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+            }
+            .card h2 {
+                margin-bottom: 0.5rem;
+            }
+            .card p {
+                color: #cbd5e1;
+            }
+        </style>
+    </head>
+    <body>
+        <!--page d'accueil -->
+        <section class="intro">
+            <h1>Guemne Elvira</h1>
+            <h2>Portfolio</h2>
+            <a href="#projets">Entrer</a>
+        </section>
+        <!--projets-->
+        <section id="projets" class="projects">
+        <a href="cv.html" class="card" target="_blank">
+            <div class="card">
+                <h2>Projet 1</h2>
+                <p>Site qui affiche mon cv</p>
+            </div>
+        </a>
+        <a href="formulaire.html" class="card" target="_blank">
+            <div class="card">
+                <h2>Projet 2</h2>
+                <p>Site qui affiche un formulaire</p>
+            </div>
+        </a>
+        <a href="icone.html" class="card" target="_blank">
+            <div class="card">
+                <h2>Projet 3</h2>
+                <p>Site qui affiche une icone à coté d'un lien</p>
+            </div>
+        </a>
+        <a href="photo.html" class="card" target="_blank">
+            <div class="card">
+                <h2>Projet 4</h2>
+                <p>Site qui affiche des photos à l'aide du grid card</p>
+            </div>
+        </a>
+        </section>
+        
+    </body>
+</html>
